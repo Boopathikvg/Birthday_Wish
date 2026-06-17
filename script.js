@@ -434,47 +434,61 @@ let noteSchedulers = [];
 
 // Notes for "Happy Birthday to You"
 // frequencies: C4=261.63, D4=293.66, E4=329.63, F4=349.23, G4=392.00, A4=440.00, Bb4=466.16, C5=523.25
+// Notes for Ed Sheeran's "Perfect" (G Major)
 const melodyNotes = [
-  { note: 'C4', freq: 261.63, duration: 0.5 },
-  { note: 'C4', freq: 261.63, duration: 0.25 },
-  { note: 'D4', freq: 293.66, duration: 0.75 },
-  { note: 'C4', freq: 261.63, duration: 0.75 },
-  { note: 'F4', freq: 349.23, duration: 0.75 },
-  { note: 'E4', freq: 329.63, duration: 1.5 },
-  
-  // Pause
-  { note: 'REST', freq: 0, duration: 0.25 },
-  
-  { note: 'C4', freq: 261.63, duration: 0.5 },
-  { note: 'C4', freq: 261.63, duration: 0.25 },
-  { note: 'D4', freq: 293.66, duration: 0.75 },
-  { note: 'C4', freq: 261.63, duration: 0.75 },
-  { note: 'G4', freq: 392.00, duration: 0.75 },
-  { note: 'F4', freq: 349.23, duration: 1.5 },
-  
-  // Pause
-  { note: 'REST', freq: 0, duration: 0.25 },
-  
-  { note: 'C4', freq: 261.63, duration: 0.5 },
-  { note: 'C4', freq: 261.63, duration: 0.25 },
-  { note: 'C5', freq: 523.25, duration: 0.75 },
-  { note: 'A4', freq: 440.00, duration: 0.75 },
-  { note: 'F4', freq: 349.23, duration: 0.75 },
-  { note: 'E4', freq: 329.63, duration: 0.75 },
-  { note: 'D4', freq: 293.66, duration: 1.5 },
-  
-  // Pause
-  { note: 'REST', freq: 0, duration: 0.25 },
-  
-  { note: 'Bb4', freq: 466.16, duration: 0.5 },
-  { note: 'Bb4', freq: 466.16, duration: 0.25 },
-  { note: 'A4', freq: 440.00, duration: 0.75 },
-  { note: 'F4', freq: 349.23, duration: 0.75 },
-  { note: 'G4', freq: 392.00, duration: 0.75 },
-  { note: 'F4', freq: 349.23, duration: 1.75 },
+  // I found a love for me
+  { note: 'G4', freq: 392.00, duration: 0.65 },
+  { note: 'A4', freq: 440.00, duration: 0.22 },
+  { note: 'B4', freq: 493.88, duration: 0.65 },
+  { note: 'G4', freq: 392.00, duration: 0.43 },
+  { note: 'B4', freq: 493.88, duration: 0.65 },
+  { note: 'C5', freq: 523.25, duration: 0.22 },
+  { note: 'B4', freq: 493.88, duration: 0.43 },
+  { note: 'A4', freq: 440.00, duration: 0.43 },
+  { note: 'G4', freq: 392.00, duration: 0.43 },
+  { note: 'A4', freq: 440.00, duration: 0.86 },
+  { note: 'REST', freq: 0, duration: 0.43 },
+
+  // Darling just dive right in
+  { note: 'G4', freq: 392.00, duration: 0.65 },
+  { note: 'A4', freq: 440.00, duration: 0.22 },
+  { note: 'B4', freq: 493.88, duration: 0.65 },
+  { note: 'G4', freq: 392.00, duration: 0.43 },
+  { note: 'G4', freq: 392.00, duration: 0.65 },
+  { note: 'G4', freq: 392.00, duration: 0.22 },
+  { note: 'D4', freq: 293.66, duration: 0.43 },
+  { note: 'G4', freq: 392.00, duration: 0.86 },
+  { note: 'REST', freq: 0, duration: 0.43 },
+
+  // And follow my lead
+  { note: 'G4', freq: 392.00, duration: 0.65 },
+  { note: 'A4', freq: 440.00, duration: 0.22 },
+  { note: 'B4', freq: 493.88, duration: 0.65 },
+  { note: 'G4', freq: 392.00, duration: 0.43 },
+  { note: 'B4', freq: 493.88, duration: 0.65 },
+  { note: 'C5', freq: 523.25, duration: 0.22 },
+  { note: 'B4', freq: 493.88, duration: 0.43 },
+  { note: 'A4', freq: 440.00, duration: 0.43 },
+  { note: 'G4', freq: 392.00, duration: 0.43 },
+  { note: 'A4', freq: 440.00, duration: 0.86 },
+  { note: 'G4', freq: 392.00, duration: 0.22 },
+  { note: 'G4', freq: 392.00, duration: 0.65 },
+  { note: 'REST', freq: 0, duration: 0.43 },
+
+  // Well I found a girl, beautiful and sweet
+  { note: 'B4', freq: 493.88, duration: 0.65 },
+  { note: 'C5', freq: 523.25, duration: 0.22 },
+  { note: 'D5', freq: 587.33, duration: 0.65 },
+  { note: 'C5', freq: 523.25, duration: 0.43 },
+  { note: 'B4', freq: 493.88, duration: 0.43 },
+  { note: 'A4', freq: 440.00, duration: 0.43 },
+  { note: 'G4', freq: 392.00, duration: 0.43 },
+  { note: 'A4', freq: 440.00, duration: 0.86 },
+  { note: 'G4', freq: 392.00, duration: 0.22 },
+  { note: 'A4', freq: 440.00, duration: 0.65 },
   
   // Loop buffer
-  { note: 'REST', freq: 0, duration: 1.0 }
+  { note: 'REST', freq: 0, duration: 1.5 }
 ];
 
 // Calculate cumulative timing offsets
@@ -522,46 +536,7 @@ function playChimeEffect(freq, duration) {
 }
 
 // Pluck Synth Note (Chimes/Music Box style)
-function playSynthNote(freq, startTime, duration) {
-  if (freq === 0) return; // Rest note
 
-  const osc = audioCtx.createOscillator();
-  const oscSub = audioCtx.createOscillator(); // Sub overtone for warmth
-  const gainNode = audioCtx.createGain();
-  const filter = audioCtx.createBiquadFilter();
-
-  osc.type = 'sine';
-  osc.frequency.setValueAtTime(freq, startTime);
-  
-  // Subtle music box metallic chime overtone
-  oscSub.type = 'triangle';
-  oscSub.frequency.setValueAtTime(freq * 2, startTime); // One octave higher
-
-  // Filter out harsh highs for cozy chimes
-  filter.type = 'lowpass';
-  filter.frequency.setValueAtTime(1000, startTime);
-  filter.Q.setValueAtTime(1, startTime);
-
-  // Pluck Gain Envelope
-  const volume = volumeLevel * 0.15; // bound volume
-  gainNode.gain.setValueAtTime(0, startTime);
-  gainNode.gain.linearRampToValueAtTime(volume, startTime + 0.02); // fast attack
-  gainNode.gain.exponentialRampToValueAtTime(0.0001, startTime + duration); // smooth pluck decay
-
-  osc.connect(filter);
-  oscSub.connect(filter);
-  filter.connect(gainNode);
-  gainNode.connect(audioCtx.destination);
-
-  osc.start(startTime);
-  oscSub.start(startTime);
-  
-  osc.stop(startTime + duration + 0.1);
-  oscSub.stop(startTime + duration + 0.1);
-
-  // Keep track to stop if paused
-  noteSchedulers.push(osc, oscSub);
-}
 
 function startSynthMelody() {
   initAudioContext();

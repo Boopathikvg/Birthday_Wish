@@ -10,10 +10,10 @@ Here is a quick guide on how to customize it:
 
 All images are stored in the [images/](file:///e:/A-%20Z%20project/Portfolio/birthday-wish/images/) folder. To replace them, rename your friend's photos to match the filenames below and copy them into that folder (overwriting the defaults):
 
-### ✉️ Page 2: Sealed Envelopes (2 Photos)
-These photos appear inside the sealed envelopes. For best results, use **landscape (horizontal)** aspect ratio photos (e.g., 4:3 or 16:9).
-- **Photo 1**: `birthday_cake.png` (displays in the left envelope)
-- **Photo 2**: `birthday_balloons.png` (displays in the right envelope)
+### ✉️ Page 2: Fanning Sealed Envelope (2 Photos)
+These photos appear inside the single sealed envelope and fan out left and right when opened. For best results, use **landscape (horizontal)** aspect ratio photos (e.g., 4:3 or 16:9).
+- **Photo 1**: `birthday_cake.png` (slides and fans to the left)
+- **Photo 2**: `birthday_balloons.png` (slides and fans to the right)
 *Note: You can use JPG or WebP images too! Just open `index.html` and search for these filenames to change the extensions if needed.*
 
 ### 🚀 Page 3: Hidden Roaming Memories (2 Photos)
@@ -27,15 +27,15 @@ This is the main, high-resolution photo of your friend displayed in the center o
 
 ---
 
-## 🎵 2. Adding the Birthday Song
+## 🎵 2. Adding the Background Song
 
 The music player is styled as a vintage vinyl record player. 
-1. Get a custom MP3 recording or her favorite song.
+1. Obtain an MP3 recording of Ed Sheeran's **Perfect (Piano Instrumental)** (or any song she loves!).
 2. Rename the file to `birthday-song.mp3`.
 3. Save it inside the [music/](file:///e:/A-%20Z%20project/Portfolio/birthday-wish/music/) folder.
 
 ### 🔔 What if you don't add a song?
-The website has a built-in **Web Audio API Sound Synthesizer**. If the browser detects that `birthday-song.mp3` is missing, clicking **Play** will automatically activate a music-box style synthesizer that plays a sweet chimes rendition of "Happy Birthday to You". 
+The website has a built-in **Web Audio API Sound Synthesizer**. If the browser detects that `birthday-song.mp3` is missing, clicking **Play** will automatically activate a music-box style synthesizer that plays a sweet, melodic chimes rendition of Ed Sheeran's **Perfect**. 
 
 ---
 
